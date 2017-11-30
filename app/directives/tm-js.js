@@ -934,7 +934,7 @@ MetronicApp.directive('crmNotes', [
 								ngChange: '&'
 						},
 						templateUrl: function(el, attr) {
-								return '/templates/core/notes.html';
+								return attr.type === "public" ? "/templates/core/notes.html" : "/templates/core/privateNotes.html";
 						},
 						link: function(scope, elem, attrs, ngModel) {
 
