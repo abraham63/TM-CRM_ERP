@@ -189,18 +189,6 @@ const baseSchema = new Schema({
 						default: false
 				}
 		}],
-		privateNotes: [{
-				title: String,
-				note: String,
-				public: {
-						type: Boolean,
-						default: false
-				},
-				edit: {
-						type: Boolean,
-						default: false
-				}
-		}],
 		discount: {
 				escompte: {
 						percent: {
